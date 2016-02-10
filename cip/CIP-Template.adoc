@@ -46,6 +46,7 @@ http://grokbase.com/t/gg/neo4j/129h0xhnpd/using-if-condition-clause-in-cypher
 https://github.com/neo4j/neo4j/issues/29
 
 http://oskarhane.com/neo4j-cypher-if-not-exists-get-that-instead/
+Also linked list creation in cypher are pain to deal with. 
 
 ...
 
