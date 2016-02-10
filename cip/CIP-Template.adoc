@@ -38,11 +38,15 @@ The problem is that cypher does not really have an if statement. Cypher has wher
 
 You see different stack overflow questions
 http://stackoverflow.com/questions/26543579/neo4j-cypher-create-relationship-if-certain-condition-is-met
+
 http://stackoverflow.com/questions/22459893/set-in-combination-with-case-statement-in-cypher
+
 http://grokbase.com/t/gg/neo4j/129h0xhnpd/using-if-condition-clause-in-cypher
+
 https://github.com/neo4j/neo4j/issues/29
+
 http://oskarhane.com/neo4j-cypher-if-not-exists-get-that-instead/
-Also I had to go to java 
+
 ...
 
 
@@ -57,10 +61,17 @@ For each aspect of the proposed feature(s), provide at least one Cypher example 
 
 _An example of this is shown below._
 
-Find all persons whose name starts with "And":
 [source, cypher]
 ----
-MATCH (a:Person) WHERE a.name STARTS WITH “And”
+MATCH (a:Person) 
+if (a.name == 'andy')
+{
+  create(a)-[:hasdog]->()
+}
+if (a.name == 'woody')
+{
+  create(a)-[:hasnodog]->()
+}
 RETURN a
 ----
 
