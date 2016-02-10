@@ -25,21 +25,27 @@
 [abstract]
 .Abstract
 --
-This is a high-level summary of the aim and description of the CIP.
+Adding the "if" statement into cypher
 --
 
 toc::[]
 
 
 == Motivation
-
-Provide the rationale and justification for the proposed feature(s).
+The problem is that cypher does not really have an if statement. Cypher has where, and you can use foreach as a kind of if statement. I now have to use Java because the queries are to difficult to understand. 
 
 == Background
 
-This is further background regarding the CIP, should it be required or deemed useful.
+You see different stack overflow questions
+http://stackoverflow.com/questions/26543579/neo4j-cypher-create-relationship-if-certain-condition-is-met
+http://stackoverflow.com/questions/22459893/set-in-combination-with-case-statement-in-cypher
+http://grokbase.com/t/gg/neo4j/129h0xhnpd/using-if-condition-clause-in-cypher
+https://github.com/neo4j/neo4j/issues/29
+http://oskarhane.com/neo4j-cypher-if-not-exists-get-that-instead/
+Also I had to go to java 
+...
 
-Please ensure that links to related documents (including other CIPs) are provided.
+
 
 == Proposal
 
